@@ -1,0 +1,23 @@
+FROM ubuntu:24.04
+
+RUN apt-get -y update
+
+RUN yes | unminimize
+
+RUN apt-get -y install apt-utils
+
+RUN apt-get -y install iputils-ping
+
+RUN apt-get -y install manpages man-db
+
+RUN apt-get -y install file vim
+
+RUN apt-get -y bc
+
+WORKDIR "/root"
+
+RUN mkdir "scripts" "bash"
+
+RUN echo "export PATH=$PATH:/root/scripts" >> .profile
+
+CMD ["/bin/bash"]
