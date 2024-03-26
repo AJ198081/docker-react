@@ -12,7 +12,7 @@ RUN apt-get -y install manpages man-db
 
 RUN apt-get -y install file vim
 
-RUN apt-get -y bc
+RUN apt-get -y install bc curl
 
 WORKDIR "/root"
 
