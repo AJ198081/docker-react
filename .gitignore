@@ -23,4 +23,6 @@ yarn-debug.log*
 yarn-error.log*
 
 .idea
-.idea/sonarlint/**
+.idea/sonarlint/*
+.idea/sonarlint/issuestore/index.pb
+.idea/sonarlint/securityhotspotstore/index.pb
